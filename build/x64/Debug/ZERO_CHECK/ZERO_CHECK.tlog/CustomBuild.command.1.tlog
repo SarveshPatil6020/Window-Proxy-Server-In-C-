@@ -1,0 +1,10 @@
+^D:\SARVESH NP\MULTITHREADEDPROXYSERVER\BUILD\CMAKEFILES\B0EBB7482F3BDB9D9E7962DCF875F0A5\GENERATE.STAMP.RULE
+setlocal
+D:\cmake-4.3.2-windows-x86_64\bin\cmake.exe "-SD:/Sarvesh NP/MultithreadedProxyServer" "-BD:/Sarvesh NP/MultithreadedProxyServer/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Sarvesh NP/MultithreadedProxyServer/build/MultithreadedProxyServer.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
